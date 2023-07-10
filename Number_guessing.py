@@ -2,8 +2,6 @@ import random
 
 num = random.randint(0, 10)
 
-print(num)
-
 score = 10
 print("Your score is " + str(score))
 
@@ -20,8 +18,8 @@ def win_lose(x):
         print("You lose.")
 
 counter = 10
-try:
-    while True:
+while True:
+    try:
         guess = int(input("Guess the number: "))
         if guess == num:
             y = True
@@ -43,5 +41,5 @@ try:
             break
         elif score == 5:
             numer_type()
-except ValueError:
-    print("Invalid input, must be a number.")
+    except ValueError:
+        print("Invalid input, must be a number.")
