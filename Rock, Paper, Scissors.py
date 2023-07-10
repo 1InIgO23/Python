@@ -28,5 +28,11 @@ def game(x):
     else:
         print("Invalid input")
 
-player_choice = input("Choose rock, paper or scissors: ")
-game(player_choice)
+while True:
+    player_choice = input("Choose rock, paper or scissors: ")
+    game(player_choice)
+    stop = input("Continue?(Y/N) ")
+    if stop == "Y":
+        pass
+    elif stop == "N":
+        break
