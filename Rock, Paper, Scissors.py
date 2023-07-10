@@ -5,6 +5,7 @@ Rock: 1
 Paper: 2
 Scissors: 3
 """
+
 def game(x):
     cpus_choice = random.randint(1, 3)
     if player_choice == "rock" and cpus_choice == 1:
